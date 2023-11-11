@@ -1,0 +1,568 @@
+/* estilos generales */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+h1{font-size: 3.2em;}
+h2{font-size: 3em;}
+h3{font-size: 2.4em;}
+h4{font-size: 2.0em;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+/* header{ */
+
+    header{
+        /* background-color: rgba(34, 9, 44, 0.616); */
+        background-color: rgb(206, 90, 103);
+        height: 140px;
+        
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    header .logo{
+        padding-top: 10px;
+    }
+
+    header .logo img{
+        width: 220px;
+    }
+
+   
+
+    header ul{
+        padding: 0px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header li{
+        padding: 5px 0px;
+    
+    }
+
+    header a{
+        padding: 10px 5px;
+
+        color: white;
+    }
+
+    header a:hover{
+       
+        font-weight: bold;
+    }
+
+    /* section1 */
+    
+    #hero{
+        /* background-color: rgb(100, 35, 65); */
+        /* background-color: rgb(216,18,18); */
+        /* background-color: rgb(31, 23, 23); */
+        background-image:linear-gradient(
+            0deg
+            ,rgba(179, 83, 83, 0.5)
+            ,rgba(0,0,0,0.5)
+        ) 
+        ,url(images/uni.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 72vh;
+        width: 100%;
+        padding: 30px 0px;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero h4{
+        margin-bottom: 0px;
+
+        font-size: 1.3em;
+        font-weight: 0;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+    }
+
+    #hero h2{
+        margin: 0;
+
+        font-size: 4.5em;
+        font-weight: bold;
+        color: white;
+    }
+
+    #hero a{
+        
+        background-color: rgba(135, 35, 65,0);
+        padding: 15px 15px;
+        margin-top: 20px;
+        border: 1px solid white;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px black;
+        
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        
+        transition: 0.5s background-color;
+    }
+    
+    #hero a:hover{
+        background-color: rgba(135, 35, 65, 0.63);
+    }
+
+    /* section2 */
+
+    #universidad{
+        /* background-color: rgb(190, 50, 68); */
+        width: 100%;
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+    #universidad .uni_texto h2{
+
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(190, 50, 68);
+    }
+
+    #universidad .uni_texto p{
+       max-width:420px;
+        line-height: 20px;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    #universidad .uni_texto .texto2{
+        display: none;
+    }
+
+    #universidad .img_infraestructura img{
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    #universidad .ubicacion h3{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 1.8em;
+        text-align: center;
+        color: rgb(190, 50, 68);
+    }
+
+    #universidad .ubicacion iframe{
+        margin-top: 20px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+
+        height: 280px;
+        width: 360px;
+        
+    }
+
+    /* section3 */
+
+
+    #n_carr{
+        background-color: rgbA(252, 245, 237,0.5);
+        width: 100%;
+        height: 900px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    #n_carr .uni_texto h2{
+        padding-top: 25px;
+        margin: 0;
+
+        font-size: 2.7em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    #n_carr .uni_texto p{
+        max-width: 90vw;
+        padding: 20px;
+        margin: 0;
+
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    
+
+
+    #n_carr .carreras{
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #n_carr .carreras h2{
+        margin: 20px;
+        font-size: 1.5em;
+    }
+
+    #n_carr .carreras img{
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    #n_carr .carreras .grupo_A{
+        background-color: rgba(255, 0, 0, 0.048);
+        width: 300px;
+        height: 200px;
+        padding-top: 0px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: rgb(131, 0, 0);
+    }
+
+    #n_carr .carreras .grupo_B{
+        background-color: rgba(0, 128, 0, 0.068);
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: rgb(0, 80, 0);
+    }
+
+    #n_carr .carreras .grupo_C_y_D{
+        background-color: rgba(0, 0, 255, 0.123);
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: rgb(8, 104, 148);
+    }
+
+
+    #n_carr .carreras img{
+        width: 100px;
+    }
+
+    /* section4 */
+
+    #admision{
+        background-color: rgb(245, 245, 245);
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #admision .uni_texto{
+        padding: 20px 10px;
+    }
+
+    #admision .uni_texto h2{
+        margin: 0;
+        padding:10px 20px;
+        border: 3px ;
+        border-style:dashed;
+        border-radius: 50px;
+
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2.7em;
+    }
+    
+    #admision .metodos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #admision .metodos p{
+        width: 320px;
+        margin: 0px 40px;
+
+        text-align: initial;
+        font-size: 1.2em;
+    }
+
+
+    #admision .metodos h2{
+        padding: 10px 5px;
+        margin: 0;
+        
+        text-align: center;
+        font-size: 2em;
+    }
+
+
+    #admision .metodos .normal{
+        width: 360px;
+        padding: 5px;
+        margin: 0px 0px;
+
+        color: rgb(0, 0, 0);
+    }
+    
+
+    #admision .metodos .cepru{
+        width: 360px;
+        padding: 50px 0px;
+        margin: 5px 0px;
+
+        color: rgb(0, 0, 0);
+    }
+    
+
+    /* footer */
+
+    #contacto{
+        /* background-color: rgba(34, 9, 44, 0.616); */
+        background-color: rgb(206, 90, 103);
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contacto .conteiner {
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+
+    #contacto .conteiner h3{
+        margin: 0;
+
+        font-size: 2.7em;
+        font-weight: bold;
+        color: rgb(250, 250, 250);
+        text-align: center;
+    }
+
+    #contacto .conteiner .uni_texto p{
+        font-size: 1em;
+        color: white;
+    }
+
+    #contacto h4{
+        margin-bottom: 8px;
+        margin-top: 50px;
+
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(250, 250, 250);
+    }
+
+
+    @media (min-width:1000px) {
+        header {
+            padding: 0px 40px;
+            height: 100px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header ul{
+            
+            display: flex;
+            flex-direction: row;
+
+            font-size: 1.2em;
+        }
+
+        header a{
+            padding: 0px 15px;
+        }
+
+        #hero h2{
+            font-size: 6.7em;
+        }
+
+        #universidad{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #universidad .uni_texto .texto2{
+            display: block;
+        }
+
+        #universidad .ubicacion .img_infraestructura{
+            display: none;
+        }
+
+        #n_carr{
+            height: 400px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        #n_carr .carreras{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #n_carr .carreras .grupo_A{
+            margin: 0px 20px;
+        }
+
+        #n_carr .carreras .grupo_B{
+             margin: 0px 20px;
+        }
+
+        #n_carr .carreras .grupo_C_y_D{
+             margin: 0px 20px;
+        }
+
+        /* admisiom */
+
+        #admision{
+
+            height: 700px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #admision .metodos{
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #admision .metodos p{
+            text-align: center;
+        }
+
+        #admision .metodos .normal{
+            background-color:   rgb(250, 250, 250);
+            width: 100%;
+            height:50%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        #admision .metodos .cepru{
+            background-color:   rgb(250, 250, 250);
+            width: 100%;
+            height: 50%;
+            padding: 0px;
+            /* margin: 80px 0px; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #admision .metodos .normal .img1{
+            background-image: url(images/normal.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 50%;
+            height: 200px;
+
+            margin-top: 20px;
+        }
+
+        #admision .metodos .cepru .img2{
+            background-image: url(images/cepru.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 50%;
+            height: 200px;
+
+            margin-top: 20px;
+        }
+
+        /*  contacto */
+
+        #contacto{
+            margin-bottom: 0px;
+            height: 340pxs;
+            padding: 10px 20px ;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        #contacto .conteiner h3{
+            font-size: 1.5em;
+        }
+
+        #contacto h4{
+            margin-top: 200px;
+        }
+    }
